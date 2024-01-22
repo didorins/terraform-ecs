@@ -15,3 +15,6 @@ Run 'terraform init' again - This initializes the backend for remote state to be
 Adjust desired values in main.tf
 Run 'terraform plan'
 If result is satisfying, run 'terraform apply -auto-approve'
+
+
+![](/ecs.drawio.png)
