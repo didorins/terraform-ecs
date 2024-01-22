@@ -17,4 +17,4 @@ Run 'terraform plan'
 If result is satisfying, run 'terraform apply -auto-approve'
 
 
-![](/ecs.drawio.png)
+![](/ecs.jpg)
