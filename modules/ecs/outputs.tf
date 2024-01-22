@@ -12,3 +12,8 @@ output "aws_caller_identity" {
   description = "Who am I ?"
   value = data.aws_caller_identity.current.account_id
 }
+
+output "ecs_task_role" {
+  description = "ARN of the IAM Role used by ECS task"
+  value = aws_iam_role.this.arn
+}

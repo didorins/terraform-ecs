@@ -61,7 +61,7 @@ module "ecs" {
   network_mode = "awsvpc"
 
   execution_role_arn = "arn:aws:iam::${module.ecs.aws_caller_identity}:role/ecsTaskExecutionRole"
-  task_role_arn = "arn:aws:iam::730335498415:role/ecs-roleee"
+  task_role_arn = module.ecs.ecs_task_role
 
   vpc_id  = module.vpc.vpc_id
   subnets = module.vpc.public_subnet_ids
